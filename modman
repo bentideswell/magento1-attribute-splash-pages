@@ -1,0 +1,16 @@
+app/code/community/Fishpig/AttributeSplash/Block											app/code/community/Fishpig/AttributeSplash/Block
+app/code/community/Fishpig/AttributeSplash/Controller									app/code/community/Fishpig/AttributeSplash/Controller
+app/code/community/Fishpig/AttributeSplash/controllers								app/code/community/Fishpig/AttributeSplash/controllers
+app/code/community/Fishpig/AttributeSplash/etc												app/code/community/Fishpig/AttributeSplash/etc
+app/code/community/Fishpig/AttributeSplash/FPAdmin										app/code/community/Fishpig/AttributeSplash/FPAdmin
+app/code/community/Fishpig/AttributeSplash/Helper											app/code/community/Fishpig/AttributeSplash/Helper
+app/code/community/Fishpig/AttributeSplash/license.txt								app/code/community/Fishpig/AttributeSplash/license.txt
+app/code/community/Fishpig/AttributeSplash/Model											app/code/community/Fishpig/AttributeSplash/Model
+app/code/community/Fishpig/AttributeSplash/notes.txt									app/code/community/Fishpig/AttributeSplash/notes.txt
+app/code/community/Fishpig/AttributeSplash/sql												app/code/community/Fishpig/AttributeSplash/sql
+app/design/adminhtml/default/default/layout/attribute-splash.xml			app/design/adminhtml/default/default/layout/attribute-splash.xml
+app/design/frontend/base/default/layout/attribute-splash.xml					app/design/frontend/base/default/layout/attribute-splash.xml
+app/design/frontend/base/default/template/attribute-splash						app/design/frontend/base/default/template/attribute-splash
+app/etc/modules/Fishpig_AttributeSplash.xml														app/etc/modules/Fishpig_AttributeSplash.xml
+skin/frontend/base/default/css/attribute-splash.css										skin/frontend/base/default/css/attribute-splash.css
+var/connect/Fishpigs_Attribute_Splash_Page.xml												var/connect/Fishpigs_Attribute_Splash_Page.xml
