@@ -1,5 +1,5 @@
 <_>
-   <form_key>KNAILiNvMGD4ptU4</form_key>
+   <form_key>f17OvKomEyQb2ZcV</form_key>
    <name>Fishpigs_Attribute_Splash_Page</name>
    <channel>community</channel>
    <version_ids>
@@ -10,7 +10,7 @@
    <description>This module allows you to create splash pages (landing pages) for your product attributes. These pages function much like category pages, allowing yo to display products, static blocks or both. The module works with the category navigation and layered navigation and includes fully customisable SEO URL&apos;s.</description>
    <license>FishPig EULA</license>
    <license_uri>http://fishpig.co.uk/license.txt</license_uri>
-   <version>3.3.9.6</version>
+   <version>3.3.9.7</version>
    <stability>stable</stability>
    <notes>For a list of changes, please see https://fishpig.co.uk/magento/extensions/attribute-splash-pages/#changelog</notes>
    <authors>
@@ -41,7 +41,7 @@
             <max/>
          </max>
          <files>
-            <files>                                                                                            </files>
+            <files>                                                                                             </files>
          </files>
       </package>
       <extension>
@@ -63,7 +63,6 @@
          <target>magedesign</target>
          <target>magedesign</target>
          <target>magedesign</target>
-         <target>magedesign</target>
          <target>mage</target>
          <target>mageskin</target>
       </target>
@@ -71,7 +70,6 @@
          <path/>
          <path>Fishpig/AttributeSplash</path>
          <path>adminhtml/default/default/layout/attribute-splash.xml</path>
-         <path>adminhtml/default/default/template/attribute-splash/</path>
          <path>frontend/base/default/layout/attribute-splash.xml</path>
          <path>frontend/base/default/template/attribute-splash/</path>
          <path>app/etc/modules/Fishpig_AttributeSplash.xml</path>
@@ -81,7 +79,6 @@
          <type>file</type>
          <type>dir</type>
          <type>file</type>
-         <type>dir</type>
          <type>file</type>
          <type>dir</type>
          <type>file</type>
@@ -95,12 +92,10 @@
          <include/>
          <include/>
          <include/>
-         <include/>
       </include>
       <ignore>
          <ignore/>
          <ignore>#/Addon*#</ignore>
-         <ignore/>
          <ignore/>
          <ignore/>
          <ignore/>

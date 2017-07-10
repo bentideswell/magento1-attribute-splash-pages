@@ -15,7 +15,7 @@ class Fishpig_AttributeSplash_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_B
 		$this->setId('splash_page_grid');
 		$this->setDefaultSort('page_id');
 		$this->setDefaultDir('asc');
-		$this->setSaveParametersInSession(false);
+		$this->setSaveParametersInSession(true);
 		$this->setUseAjax(true);
 	}
 
@@ -176,6 +176,18 @@ class Fishpig_AttributeSplash_Block_Adminhtml_Page_Grid extends Mage_Adminhtml_B
 		$this->getMassactionBlock()->addItem('delete', array(
 			'label'=> $this->__('Delete'),
 			'url'  => $this->getUrl('*/attributeSplash_page/massDelete'),
+			'confirm' => Mage::helper('catalog')->__('Are you sure?')
+		));
+		
+		$this->getMassactionBlock()->addItem('enable', array(
+			'label'=> $this->__('Enable'),
+			'url'  => $this->getUrl('*/attributeSplash_page/massEnable'),
+			'confirm' => Mage::helper('catalog')->__('Are you sure?')
+		));
+		
+		$this->getMassactionBlock()->addItem('disable', array(
+			'label'=> $this->__('Disable'),
+			'url'  => $this->getUrl('*/attributeSplash_page/massDisable'),
 			'confirm' => Mage::helper('catalog')->__('Are you sure?')
 		));
 	}

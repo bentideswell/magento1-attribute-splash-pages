@@ -173,6 +173,46 @@ class Fishpig_AttributeSplash_Adminhtml_AttributeSplash_PageController extends F
 		
 		$this->_redirect('*/attributeSplash');
 	}
+
+
+	public function massEnableAction()
+	{
+  	$this->_changeIsEnabledAction(1);
+  }
+  
+	public function massDisableAction()
+	{
+  	$this->_changeIsEnabledAction(0);  	
+  }
+  
+  protected function _changeIsEnabledAction($value)
+  {
+		$pageIds = $this->getRequest()->getParam('page');
+
+		if (!is_array($pageIds)) {
+			$this->_getSession()->addError($this->__('Please select page(s).'));
+		}
+		else {
+			if (!empty($pageIds)) {
+				try {
+					foreach ($pageIds as $pageId) {
+						$page = Mage::getSingleton('attributeSplash/page')->load($pageId);
+						
+						if ($page->getId()) {
+   						$page->setIsEnabled((int)$value)->save();
+						}
+					}
+					
+					$this->_getSession()->addSuccess($this->__('Total of %d record(s) have been updated.', count($pageIds)));
+				}
+				catch (Exception $e) {
+					$this->_getSession()->addError($e->getMessage());
+				}
+			}
+		}
+		
+		$this->_redirect('*/attributeSplash');
+	}
 	
 	/**
 	 * Initialise the splash page model
